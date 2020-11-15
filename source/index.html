@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>HTML Academy: Седона. Главная страница</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="header__logo">
+    <a class="page-header__logo">
       <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Городок Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button" title="Открыть меню"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -32,6 +32,7 @@
     </nav>
   </header>
   <main class="page-main">
+    <img src="http://via.placeholder.com/320x386" alt="Добро пожаловать в великолепную Седону. Потому что Гранд Каньон - отстой!">
     <h1 class="page-main__header">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
     <section class="features">
       <div class="features__wrapper">
@@ -39,13 +40,15 @@
         <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features__list">
           <li class="features__item">
-            <div class="features__card features__card--main">
-              <h3 class="features__title">Настоящий городок</h3>
-              <p features__number>— №1 —</p>
-              <p features__description>Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="item-block">
+              <div class="features__card features__card--main">
+                <h3 class="features__title">Настоящий городок</h3>
+                <p class="features__number">— №1 —</p>
+                <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <img src="http://via.placeholder.com/320x260" class="features__image features__image--city" alt="Улица Седоны. Зелёное двухэтажное здание с магазинами">
             </div>
-            <div class="features__image features__image--city"></div>
-            <ul class="features__recommendation-list">
+            <ul class="recommendation-list">
               <li class="recommendation-list__item recommendation-list__item--housing">
                 <h4 class="recommendation-list__header">Жилье</h4>
                 <p class="recommendation-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -61,28 +64,28 @@
               </li>
             </ul>
           </li>
-          <li class="features__item">
+          <li class="features__item item-block">
             <div class="features__card features__card--main">
               <h3 class="features__title">Там есть мост дьявола</h3>
-              <p features__number>— №2 —</p>
-              <p features__description>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="features__number">— №2 —</p>
+              <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="features__image features__image--bridge"></div>
+            <img src="http://via.placeholder.com/320x260" class="features__image features__image--bridge" alt="Скалистое ущелье">
           </li>
           <li class="features__item features__card features__card--sub">
             <h3 class="features__title">Небольшая площадь</h3>
-            <p features__number>— №3 —</p>
-            <p features__description>Все интересные места находятся очень близко</p>
+            <p class="features__number">— №3 —</p>
+            <p class="features__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="features__item features__card features__card--sub">
             <h3 class="features__title">Красивая дорога</h3>
-            <p features__number>— №4 —</p>
-            <p features__description>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="features__number">— №4 —</p>
+            <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="features__item features__card features__card--sub">
             <h3 class="features__title">Мало туристов</h3>
-            <p features__number>— №5 —</p>
-            <p features__description>Большинство едет в гранд каньон и толпится там</p>
+            <p class="features__number">— №5 —</p>
+            <p class="features__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
@@ -92,7 +95,7 @@
       <p class="booking__title">Заинтересовались?</p>
       <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
         в Cедоне</p>
-      <a href="#" class="button booking__button">Найти гостиницу</a>
+      <a href="#" class="booking__link button">Найти гостиницу</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Седона на карте</h2>
@@ -102,7 +105,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__hashtag"></p>
-      <ul class="page-footer__social social-list">
+      <ul class="page-footer__social social">
         <li class="social__item"><a href="#">Мы в твиттере</a></li>
         <li class="social__item"><a href="#">Мы в фейсбуке</a></li>
         <li class="social__item"><a href="#">Мы в ютьюбе</a></li>

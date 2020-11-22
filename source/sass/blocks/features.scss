@@ -1,0 +1,85 @@
+.features__wrapper {
+  text-align: center;
+}
+
+.features__intro {
+  margin-top: 43px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__card {
+  padding: 53px 12px 39px 12px;
+}
+
+.features__card--main {
+  color: $white;
+  background-color: $blue;
+}
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.features__number {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.features__description {
+  margin-top: 28px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.features__recommendation-list {
+  padding-top: 35px;
+  padding-bottom: 9px;
+  padding-left: 69px;
+  padding-right: 40px;
+  margin: 0;
+  list-style: none;
+}
+
+.features__recommendation-item {
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.features__recommendation-header {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.features__recommendation-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: $light-black;
+  text-transform: uppercase;
+}

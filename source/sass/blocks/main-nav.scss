@@ -1,0 +1,16 @@
+.main-nav__list {
+  @include reset-list;
+}
+
+.main-nav__item {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  background-color: $blue;
+}
+
+.main-nav__item a {
+  color: $white;
+  text-decoration: none;
+}

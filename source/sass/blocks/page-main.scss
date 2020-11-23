@@ -1,0 +1,27 @@
+.page-main__slogan {
+  width: 100%;
+  height: 390px;
+  text-align: center;
+  background-color: $light-blue;
+  background-image: url("../img/main-background-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-main__slogan img {
+  margin-top: 90px;
+}
+
+.page-main__header {
+  margin-top: 32px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.page-main__map {
+  margin-bottom: 10px;
+}

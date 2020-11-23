@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона. Страница отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body form-page">
   <header class="page-header">
-    <a class="page-header__logo" href="/source/index.html">
+    <a class="page-header__logo" href="index.html">
       <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Городок Седона">
     </a>
     <nav class="main-nav">
@@ -16,10 +18,10 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="/source/index.html">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="/source/catalog.html">Фото и видео</a>
+            <a href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a>Форма отзыва</a>
@@ -32,7 +34,9 @@
     </nav>
   </header>
   <main class="page-main">
-    <img src="http://via.placeholder.com/320x156" alt="">
+    <div class="page-main__slogan page-main__slogan--short">
+      <img src="http://via.placeholder.com/320x156" alt="Седона">
+    </div>
     <section class="feedback">
       <div class="feedback__wrapper">
         <h2 class="feedback__header">Оставьте свой отзыв</h2>
@@ -42,21 +46,21 @@
           <fieldset class="feedback__fieldset feedback__fieldset--name fieldset">
             <legend class="fieldset__legend">Представьтесь:</legend>
             <label class="feedback__label feedback__label--person-info label" for="name">Имя*:</label>
-            <input class="feedback__input feedback__input--name input" type="text" name="name" id="name"
+            <input class="feedback__input feedback__input--name input" type="text" inputmode="text" name="name" id="name"
               placeholder="Петр" required>
             <label class="feedback__label feedback__label--person-info label" for="surname">Фамилия*:</label>
-            <input class="feedback__input input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            <input class="feedback__input input" type="text" inputmode="text" name="surname" id="surname" placeholder="Иванов" required>
             <label class="feedback__label feedback__label--person-info label" for="patronymic">Отчество*:</label>
-            <input class="feedback__input input" type="text" name="patronymic" id="patronymic"
+            <input class="feedback__input input" type="text" inputmode="text" name="patronymic" id="patronymic"
               placeholder="Александрович" required>
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--contacts fieldset">
             <legend class="fieldset__legend">Контактная информация:</legend>
             <label class="feedback__label feedback__label--person-info label" for="phone">Контактный телефон*:</label>
-            <input class="feedback__input feedback__input--phone input" type="tel" name="phone" id="phone"
+            <input class="feedback__input feedback__input--phone input" type="tel" inputmode="tel" name="phone" id="phone"
               placeholder="Введите телефон" required>
             <label class="feedback__label feedback__label--person-info label" for="email">Электронная почта*:</label>
-            <input class="feedback__input feedback__input--email input" type="email" name="email" id="email"
+            <input class="feedback__input feedback__input--email input" type="email" inputmode="email" name="email" id="email"
               placeholder="Введите e-mail" required>
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--impression fieldset">

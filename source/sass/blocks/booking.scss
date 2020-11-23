@@ -1,0 +1,31 @@
+.booking {
+  padding: 33px 29px 49px 29px;
+}
+
+.booking__wrapper {
+  text-align: center;
+}
+
+.booking__title {
+  margin-top: 0;
+  margin-bottom: 31px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.booking__description {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: $light-black;
+  text-transform: uppercase;
+}
+
+.booking__link {
+  padding: 14px 32px 17px 32px;
+  text-decoration: none;
+}

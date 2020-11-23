@@ -1,7 +1,5 @@
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .main-nav__item {
@@ -14,4 +12,5 @@
 
 .main-nav__item a {
   color: $white;
+  text-decoration: none;
 }

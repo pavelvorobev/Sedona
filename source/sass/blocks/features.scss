@@ -11,18 +11,16 @@
 }
 
 .features__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .features__card {
   padding: 53px 12px 39px 12px;
-}
 
-.features__card--main {
-  color: $white;
-  background-color: $blue;
+  &--main {
+    color: $white;
+    background-color: $blue;
+  }
 }
 
 .features__title {
@@ -51,21 +49,17 @@
   text-transform: uppercase;
 }
 
-.features__recommendation-list {
-  padding-top: 35px;
-  padding-bottom: 9px;
-  padding-left: 69px;
-  padding-right: 40px;
-  margin: 0;
-  list-style: none;
+.features__advice {
+  @include reset-list;
+  padding: 35px 40px 9px 69px;
 }
 
-.features__recommendation-item {
+.features__advice-item {
   text-align: left;
   margin-bottom: 26px;
 }
 
-.features__recommendation-header {
+.features__advice-header {
   margin-top: 0;
   margin-bottom: 28px;
   font-size: 18px;
@@ -74,7 +68,7 @@
   text-transform: uppercase;
 }
 
-.features__recommendation-description {
+.features__advice-description {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;

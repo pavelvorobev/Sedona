@@ -1,0 +1,80 @@
+.feedback__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.feedback__header {
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback__intro {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback__fieldset {
+  padding: 0;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.feedback__legend {
+  margin-bottom: 19px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback__label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  &--person-info {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+
+.feedback__input {
+  padding: 18px 22px 14px 22px;
+  background-color: $input-background;
+  border: none;
+}
+
+.feedback__input::placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $black;
+}
+
+.feedback__fieldset--emotion textarea {
+  box-sizing: border-box;
+  min-width: 279px;
+  min-height: 160px;
+  padding: 13px 22px;
+  margin: 0;
+  background-color: $input-background;
+  border: none;
+  &::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    color: $black;
+  }
+}

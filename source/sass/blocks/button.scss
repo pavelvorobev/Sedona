@@ -2,9 +2,9 @@
   width: 280px;
   height: 58px;
   text-align: center;
+
+  @include text-bold;
   font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
   color: $white;
   background-color: $blue;
   border: none;

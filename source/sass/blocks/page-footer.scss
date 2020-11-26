@@ -20,8 +20,7 @@
 }
 
 .page-footer__copyright {
-  font-size: 14px;
-  font-weight: normal;
+  @include text-normal;
   line-height: 26px;
   text-transform: uppercase;
 }

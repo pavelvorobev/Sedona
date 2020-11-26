@@ -16,9 +16,8 @@
   margin-top: 32px;
   margin-bottom: 0;
   text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+
+  @include text-bold;
   text-transform: uppercase;
 }
 

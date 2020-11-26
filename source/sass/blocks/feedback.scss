@@ -6,9 +6,8 @@
 .feedback__header {
   margin: 0;
   margin-bottom: 42px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+
+  @include text-bold;
   text-align: center;
   text-transform: uppercase;
 }
@@ -16,8 +15,8 @@
 .feedback__intro {
   margin-top: 0;
   margin-bottom: 16px;
-  font-size: 14px;
-  font-weight: normal;
+
+  @include text-normal;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
@@ -31,20 +30,17 @@
 
 .feedback__legend {
   margin-bottom: 19px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+
+  @include text-bold;
   text-align: center;
   text-transform: uppercase;
 }
 
 .feedback__label {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+  @include text-bold;
+
   &--person-info {
-    font-size: 14px;
-    font-weight: normal;
+    @include text-normal;
     line-height: 26px;
     text-transform: uppercase;
   }
@@ -52,15 +48,16 @@
 
 .feedback__input {
   padding: 18px 22px 14px 22px;
+
+  @include text-bold;
+  color: $black;
   background-color: $input-background;
   border: none;
-}
 
-.feedback__input::placeholder {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  color: $black;
+  &::placeholder {
+    @include text-bold;
+    color: $black;
+  }
 }
 
 .feedback__fieldset--emotion textarea {
@@ -69,12 +66,17 @@
   min-height: 160px;
   padding: 13px 22px;
   margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  @include text-bold;
+  color: $black;
   background-color: $input-background;
   border: none;
+
   &::placeholder {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+
+    @include text-bold;
     color: $black;
   }
 }

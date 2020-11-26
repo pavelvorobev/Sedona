@@ -3,3 +3,14 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin text-bold {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+@mixin text-normal {
+  font-size: 14px;
+  font-weight: normal;
+}

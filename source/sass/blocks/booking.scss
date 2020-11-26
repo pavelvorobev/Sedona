@@ -9,17 +9,17 @@
 .booking__title {
   margin-top: 0;
   margin-bottom: 31px;
+
+  @include text-bold;
   font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
   text-transform: uppercase;
 }
 
 .booking__description {
   margin-top: 0;
   margin-bottom: 27px;
-  font-size: 14px;
-  font-weight: normal;
+
+  @include text-normal;
   line-height: 24px;
   color: $light-black;
   text-transform: uppercase;

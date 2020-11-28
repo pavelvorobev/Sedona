@@ -1,6 +1,4 @@
 .social-list {
   @include reset-list;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 26px;
+  @include fontMeasure(400, 14px, 26px);
 }

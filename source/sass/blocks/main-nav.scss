@@ -4,13 +4,13 @@
 
 .main-nav__item {
   text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 40px;
+
+  @include fontMeasure(700, 18px, 40px);
   background-color: $blue;
 }
 
 .main-nav__item a {
   color: $white;
+  text-transform: uppercase;
   text-decoration: none;
 }

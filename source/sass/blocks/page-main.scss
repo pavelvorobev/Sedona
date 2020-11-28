@@ -16,12 +16,15 @@
   margin-top: 32px;
   margin-bottom: 0;
   text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+
+  @include fontMeasure(700, 18px, 26px);
   text-transform: uppercase;
 }
 
 .page-main__map {
   margin-bottom: 10px;
+}
+
+.page-main__feedback {
+  margin-top: 36px;
 }

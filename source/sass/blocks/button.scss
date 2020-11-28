@@ -2,10 +2,10 @@
   width: 280px;
   height: 58px;
   text-align: center;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
+
+  @include fontMeasure(700, 21px, 26px);
   color: $white;
   background-color: $blue;
+  border: none;
   text-transform: uppercase;
 }

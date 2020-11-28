@@ -3,3 +3,13 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin fontMeasure($weight, $size, $lineHeight) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+@mixin fontFamily($mainFont, $secondFont) {
+  font-family: "#{$mainFont}", "#{$secondFont}", sans-serif;
+}

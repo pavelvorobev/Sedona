@@ -5,9 +5,8 @@
 .features__intro {
   margin-top: 43px;
   margin-bottom: 30px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 26px;
+
+  @include fontMeasure(400, 14px, 26px);
 }
 
 .features__list {
@@ -26,26 +25,23 @@
 .features__title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+
+  @include fontMeasure(700, 18px, 26px);
   text-transform: uppercase;
 }
 
 .features__number {
   margin-top: 20px;
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
+
+  @include fontMeasure(400, 14px, 21px);
 }
 
 .features__description {
   margin-top: 28px;
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
+
+  @include fontMeasure(400, 14px, 21px);
   text-transform: uppercase;
 }
 
@@ -62,18 +58,16 @@
 .features__advice-header {
   margin-top: 0;
   margin-bottom: 28px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+
+  @include fontMeasure(700, 18px, 26px);
   text-transform: uppercase;
 }
 
 .features__advice-description {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
+
+  @include fontMeasure(400, 14px, 21px);
   color: $light-black;
   text-transform: uppercase;
 }

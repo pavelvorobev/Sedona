@@ -1,5 +1,4 @@
 .social-list {
   @include reset-list;
-  @include fontMeasure(400, 14px, 24px);
-  line-height: 26px;
+  @include fontMeasure(400, 14px, 26px);
 }

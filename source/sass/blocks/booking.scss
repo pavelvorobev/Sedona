@@ -10,8 +10,7 @@
   margin-top: 0;
   margin-bottom: 31px;
 
-  @include text-bold;
-  font-size: 21px;
+  @include fontMeasure(700, 21px, 26px);
   text-transform: uppercase;
 }
 
@@ -19,8 +18,7 @@
   margin-top: 0;
   margin-bottom: 27px;
 
-  @include text-normal;
-  line-height: 24px;
+  @include fontMeasure(400, 14px, 24px);
   color: $light-black;
   text-transform: uppercase;
 }

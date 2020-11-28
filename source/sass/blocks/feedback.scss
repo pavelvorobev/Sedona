@@ -7,7 +7,7 @@
   margin: 0;
   margin-bottom: 42px;
 
-  @include text-bold;
+  @include fontMeasure(400, 18px, 26px);
   text-align: center;
   text-transform: uppercase;
 }
@@ -16,8 +16,7 @@
   margin-top: 0;
   margin-bottom: 16px;
 
-  @include text-normal;
-  line-height: 24px;
+  @include fontMeasure(400, 14px, 24px);
   text-align: center;
   text-transform: uppercase;
 }
@@ -31,17 +30,16 @@
 .feedback__legend {
   margin-bottom: 19px;
 
-  @include text-bold;
+  @include fontMeasure(400, 18px, 26px);
   text-align: center;
   text-transform: uppercase;
 }
 
 .feedback__label {
-  @include text-bold;
+  @include fontMeasure(700, 18px, 26px);
 
   &--person-info {
-    @include text-normal;
-    line-height: 26px;
+    @include fontMeasure(400, 14px, 26px);
     text-transform: uppercase;
   }
 }
@@ -49,13 +47,12 @@
 .feedback__input {
   padding: 18px 22px 14px 22px;
 
-  @include text-bold;
+  @include fontMeasure(700, 18px, 26px);
   color: $black;
   background-color: $input-background;
   border: none;
 
   &::placeholder {
-    @include text-bold;
     color: $black;
   }
 }
@@ -68,15 +65,12 @@
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
 
-  @include text-bold;
+  @include fontMeasure(700, 18px, 26px);
   color: $black;
   background-color: $input-background;
   border: none;
 
   &::placeholder {
-    font-family: "PT Sans", "Arial", sans-serif;
-
-    @include text-bold;
     color: $black;
   }
 }

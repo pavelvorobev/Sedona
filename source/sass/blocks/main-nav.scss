@@ -5,8 +5,7 @@
 .main-nav__item {
   text-align: center;
 
-  @include text-bold;
-  line-height: 40px;
+  @include fontMeasure(700, 18px, 40px);
   background-color: $blue;
 }
 

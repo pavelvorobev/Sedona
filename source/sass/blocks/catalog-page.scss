@@ -1,0 +1,8 @@
+.catalog-page__header {
+  margin: 0;
+  margin-top: 31px;
+
+  @include fontMeasure(700, 18px, 26px);
+  text-align: center;
+  text-transform: uppercase;
+}

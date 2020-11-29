@@ -1,0 +1,25 @@
+.video {
+  padding: 0 15px;
+}
+
+.video__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video__title {
+  margin: 0;
+
+  @include fontMeasure(700, 18px, 26px);
+  text-transform: uppercase;
+}
+
+.video__intro {
+  margin: 0;
+  margin-top: 27px;
+
+  @include fontMeasure(400, 14px, 24px);
+  color: $light-black;
+  text-transform: uppercase;
+}

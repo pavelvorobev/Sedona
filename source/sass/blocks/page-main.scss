@@ -1,11 +1,16 @@
 .page-main__slogan {
   width: 100%;
-  height: 390px;
+  height: 389px;
   text-align: center;
   background-color: $light-blue;
   background-image: url("../img/main-background-mobile.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/main-background.jpg");
+    height: 518px;
+  }
 }
 
 .page-main__slogan img {

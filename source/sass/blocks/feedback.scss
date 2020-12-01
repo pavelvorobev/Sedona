@@ -63,8 +63,8 @@
   min-height: 160px;
   padding: 13px 22px;
   margin: 0;
+  font-family: $font-pt-sans;
 
-  @include fontFamily(PT Sans, Arial);
   @include fontMeasure(700, 18px, 26px);
   color: $black;
   background-color: $input-background;

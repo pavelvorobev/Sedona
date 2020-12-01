@@ -3,7 +3,21 @@
 }
 
 .page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 965px;
+  }
 }
 
 .page-footer__hashtag {

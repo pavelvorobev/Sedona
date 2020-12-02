@@ -22,7 +22,7 @@
     height: 260px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $width-tablet) {
     flex-direction: row;
 
     img {
@@ -39,12 +39,12 @@
   padding: 53px 12px 39px 12px;
 
   &--main {
-    color: $white;
-    background-color: $blue;
+    color: $color-white;
+    background-color: $color-blue;
   }
 
   &--sub {
-    background-color: $card-sub-background;
+    background-color: $color-light-gray;
   }
 }
 
@@ -78,7 +78,7 @@
   @include reset-list;
   padding: 35px 40px 9px 69px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $width-tablet) {
     flex-direction: row;
   }
 }
@@ -101,6 +101,6 @@
   margin-bottom: 0;
 
   @include fontMeasure(400, 14px, 21px);
-  color: $light-black;
+  color: $color-light-black;
   text-transform: uppercase;
 }

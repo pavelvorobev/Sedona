@@ -1,13 +1,17 @@
+.page-main {
+  background-color: $color-white;
+}
+
 .page-main__slogan {
   width: 100%;
   height: 389px;
   text-align: center;
-  background-color: $light-blue;
+  background-color: $color-light-blue;
   background-image: url("../img/main-background-mobile.jpg");
   background-position: center center;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $width-tablet) {
     background-image: url("../img/main-background.jpg");
     height: 518px;
   }
@@ -24,10 +28,6 @@
 
   @include fontMeasure(700, 18px, 26px);
   text-transform: uppercase;
-}
-
-.page-main__map {
-  margin-bottom: 10px;
 }
 
 .page-main__feedback {

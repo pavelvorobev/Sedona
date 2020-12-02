@@ -48,12 +48,12 @@
   padding: 18px 22px 14px 22px;
 
   @include fontMeasure(700, 18px, 26px);
-  color: $black;
-  background-color: $input-background;
+  color: $color-black;
+  background-color: $color-input-background;
   border: none;
 
   &::placeholder {
-    color: $black;
+    color: $color-black;
   }
 }
 
@@ -66,11 +66,11 @@
   font-family: $font-pt-sans;
 
   @include fontMeasure(700, 18px, 26px);
-  color: $black;
-  background-color: $input-background;
+  color: $color-black;
+  background-color: $color-input-background;
   border: none;
 
   &::placeholder {
-    color: $black;
+    color: $color-black;
   }
 }

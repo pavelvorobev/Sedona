@@ -1,5 +1,6 @@
 .page-footer {
   padding-top: 28px;
+  background-color: $color-white;
 }
 
 .page-footer__wrapper {
@@ -9,13 +10,13 @@
   margin: 0 auto;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $width-tablet) {
     flex-direction: row;
     justify-content: space-between;
     width: 648px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $width-desktop) {
     width: 965px;
   }
 }

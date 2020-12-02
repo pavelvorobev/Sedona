@@ -3,7 +3,7 @@
   font-family: $font-pt-sans;
 
   @include fontMeasure(400, 14px, 24px);
-  color: $black;
+  color: $color-black;
 }
 
 .page__body {
@@ -11,6 +11,8 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   min-width: 320px;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   box-sizing: border-box;
+  background-color: $color-light-gray;
 }

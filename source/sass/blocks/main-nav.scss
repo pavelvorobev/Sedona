@@ -1,16 +1,38 @@
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }
 
 .main-nav__item {
   text-align: center;
 
   @include fontMeasure(700, 18px, 40px);
-  background-color: $blue;
+  background-color: $color-blue;
+
+  @media (min-width: $width-tablet) {
+    background-color: $color-white;
+  }
 }
 
 .main-nav__item a {
-  color: $white;
+  color: $color-white;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $width-tablet) {
+    color: $color-black;
+  }
 }

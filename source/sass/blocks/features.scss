@@ -13,12 +13,38 @@
   @include reset-list;
 }
 
+.features__item-block {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 260px;
+  }
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+
+    img {
+      height: 256px;
+    }
+
+    &--bridge .features__card {
+      order: 2;
+    }
+  }
+}
+
 .features__card {
   padding: 53px 12px 39px 12px;
 
   &--main {
-    color: $white;
-    background-color: $blue;
+    color: $color-white;
+    background-color: $color-blue;
+  }
+
+  &--sub {
+    background-color: $color-light-gray;
   }
 }
 
@@ -46,8 +72,15 @@
 }
 
 .features__advice {
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
   padding: 35px 40px 9px 69px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
 }
 
 .features__advice-item {
@@ -68,6 +101,6 @@
   margin-bottom: 0;
 
   @include fontMeasure(400, 14px, 21px);
-  color: $light-black;
+  color: $color-light-black;
   text-transform: uppercase;
 }

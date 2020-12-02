@@ -9,7 +9,3 @@
   font-size: $size;
   line-height: $lineHeight;
 }
-
-@mixin fontFamily($mainFont, $secondFont) {
-  font-family: "#{$mainFont}", "#{$secondFont}", sans-serif;
-}

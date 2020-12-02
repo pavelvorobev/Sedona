@@ -8,7 +8,7 @@
 
   @include fontMeasure(400, 14px, 24px);
   text-align: center;
-  color: $light-black;
+  color: $color-light-black;
   text-transform: uppercase;
 }
 
@@ -34,7 +34,7 @@
   margin-top: 1px;
 
   @include fontMeasure(400, 14px, 24px);
-  color: $light-black;
+  color: $color-light-black;
 }
 
 .photo__likes {

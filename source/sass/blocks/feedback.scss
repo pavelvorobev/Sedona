@@ -1,6 +1,14 @@
 .feedback__wrapper {
   padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 120px;
+  }
 }
 
 .feedback__header {
@@ -21,10 +29,82 @@
   text-transform: uppercase;
 }
 
+.feedback__form {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .feedback__fieldset {
   padding: 0;
   margin-bottom: 25px;
   border: none;
+
+  &--name {
+    .form__item {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--impression {
+    .form__items {
+      align-content: center;
+    }
+
+    @media (min-width: $width-tablet) {
+      order: -1;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $width-tablet) {
+      grid-column: 1/3;
+    }
+
+    .form__items {
+      @media (min-width: $width-desktop) {
+        flex-direction: row;
+      }
+    }
+
+    .form__item {
+      flex-direction: column;
+
+      @media (min-width: $width-desktop) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &--attractions {
+    .form__items {
+      align-content: center;
+    }
+
+    @media (min-width: $width-tablet) {
+      grid-column: 1/3;
+
+      .form__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      .form__items {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &--emotion {
+    @media (min-width: $width-tablet) {
+      grid-column: 1/3;
+    }
+  }
 }
 
 .feedback__legend {
@@ -39,12 +119,32 @@
   @include fontMeasure(700, 18px, 26px);
 
   &--person-info {
+    margin-right: 12px;
+
     @include fontMeasure(400, 14px, 26px);
     text-transform: uppercase;
+  }
+
+  &--mobile {
+    @media (min-width: $width-desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $width-mobile) {
+      display: none;
+    }
+
+    @media (min-width: $width-desktop) {
+      display: block;
+    }
   }
 }
 
 .feedback__input {
+  box-sizing: border-box;
+  width: 100%;
   padding: 18px 22px 14px 22px;
 
   @include fontMeasure(700, 18px, 26px);
@@ -59,7 +159,7 @@
 
 .feedback__fieldset--emotion textarea {
   box-sizing: border-box;
-  min-width: 279px;
+  width: 100%;
   min-height: 160px;
   padding: 13px 22px;
   margin: 0;
@@ -72,5 +172,23 @@
 
   &::placeholder {
     color: $color-black;
+  }
+}
+
+.feedback__required {
+  display: none;
+  text-align: right;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
+}
+
+.feedback__button {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
   }
 }

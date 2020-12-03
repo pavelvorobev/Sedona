@@ -1,0 +1,14 @@
+.form__items {
+  height: 100%;
+
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: row;
+}

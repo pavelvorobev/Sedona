@@ -110,7 +110,7 @@
 .feedback__legend {
   margin-bottom: 19px;
 
-  @include fontMeasure(400, 18px, 26px);
+  @include fontMeasure(700, 18px, 26px);
   text-align: center;
   text-transform: uppercase;
 }
@@ -125,19 +125,9 @@
     text-transform: uppercase;
   }
 
-  &--mobile {
-    @media (min-width: $width-desktop) {
-      display: none;
-    }
-  }
-
   &--desktop {
-    @media (min-width: $width-mobile) {
-      display: none;
-    }
-
     @media (min-width: $width-desktop) {
-      display: block;
+      display: none;
     }
   }
 }
@@ -169,6 +159,7 @@
   color: $color-black;
   background-color: $color-input-background;
   border: none;
+  resize: none;
 
   &::placeholder {
     color: $color-black;
@@ -178,6 +169,7 @@
 .feedback__required {
   display: none;
   text-align: right;
+  text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
     display: block;
@@ -190,5 +182,11 @@
 
   @media (min-width: $width-tablet) {
     margin: 0;
+    min-width: 324px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    min-width: 480px;
   }
 }

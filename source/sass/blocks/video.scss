@@ -16,10 +16,15 @@
 }
 
 .video__intro {
-  margin: 0;
+  margin: 10px auto 0 auto;
   margin-top: 27px;
 
   @include fontMeasure(400, 14px, 24px);
+  text-align: center;
   color: $color-light-black;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    max-width: 448px;
+  }
 }

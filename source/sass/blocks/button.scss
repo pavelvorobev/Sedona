@@ -4,6 +4,7 @@
   text-align: center;
 
   @include fontMeasure(700, 21px, 26px);
+  font-family: $font-pt-sans;
   color: $color-white;
   background-color: $color-blue;
   border: none;

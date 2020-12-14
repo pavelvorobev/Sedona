@@ -1,4 +1,6 @@
 .body__wrapper {
+  position: relative;
+
   @media (min-width: $width-desktop) {
     box-shadow: 0 5px 15px $color-inner-shadow;
   }

@@ -1,3 +1,11 @@
 .page-header {
   background-color: $color-white;
 }
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}

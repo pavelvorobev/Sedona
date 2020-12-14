@@ -7,6 +7,7 @@ $color-black: #000000;
 $color-light-black: #333333;
 $color-input-background: #f2f2f2;
 $color-light-gray: #eeeeee;
+$color-gray: #d6d6d6;
 $color-inner-shadow: rgba(0, 1, 1, 0.2);
 
 /* Font */
@@ -16,5 +17,6 @@ $font-pt-sans: "PT Sans", "Arial", sans-serif;
 /* Viewports */
 
 $width-mobile: 320px;
+$width-mobile-only: 767px;
 $width-tablet: 768px;
 $width-desktop: 1200px;

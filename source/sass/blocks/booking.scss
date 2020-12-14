@@ -1,5 +1,13 @@
 .booking {
-  padding: 33px 29px 49px 29px;
+  padding: 41px 30px;
+
+  @media (min-width: $width-tablet) {
+    padding: 58px 155px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 58px 155px 66px 155px;
+  }
 }
 
 .booking__wrapper {
@@ -24,6 +32,17 @@
 }
 
 .booking__link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 58px;
+  margin: 0 auto;
   padding: 14px 32px 17px 32px;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+
+  @media (min-width: $width-tablet) {
+    width: 458px;
+  }
 }

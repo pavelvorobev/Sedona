@@ -1,4 +1,22 @@
 .social-list {
+  display: flex;
+
   @include reset-list;
+  margin-bottom: 40px;
+  justify-content: center;
+
   @include fontMeasure(400, 14px, 26px);
+}
+
+.social-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: $color-blue;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
 }

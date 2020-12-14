@@ -1,6 +1,7 @@
 .button {
+  box-sizing: border-box;
   width: 280px;
-  height: 58px;
+  min-height: 58px;
   text-align: center;
 
   @include fontMeasure(700, 21px, 26px);

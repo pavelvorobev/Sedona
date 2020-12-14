@@ -24,6 +24,7 @@
 .page-main__header {
   margin-top: 32px;
   margin-bottom: 0;
+  padding: 0 12px;
   text-align: center;
 
   @include fontMeasure(700, 18px, 26px);

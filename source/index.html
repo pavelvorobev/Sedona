@@ -11,11 +11,12 @@
 <body class="page__body body">
   <div class="body__wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed">
+        <br class="visually-hidden">
         <button class="main-nav__toggle" type="button" title="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a>Главная</a>
             </li>
             <li class="main-nav__item">
@@ -29,16 +30,17 @@
             </li>
           </ul>
           <a class="page-header__logo">
-            <img src="img/logo.svg" width="102" height="84" alt="Городок Седона">
+            <img class="page-header__logo--mobile" src="img/logo.svg" width="102" height="84" alt="Городок Седона">
+            <img class="page-header__logo--desktop" src="img/logo-desktop.svg" width="187" height="97" alt="Городок Седона">
           </a>
         </div>
       </nav>
     </header>
     <main class="page-main">
       <div class="page-main__slogan">
-        <img src="http://via.placeholder.com/280x214" alt="Добро пожаловать в великолепную Седону. Потому что Гранд Каньон - отстой!">
+        <img src="img/slogan-indexx.svg" alt="Добро пожаловать в великолепную Седону. Потому что Гранд Каньон - отстой!">
       </div>
-      <h1 class="page-main__header">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="page-main__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <section class="features">
         <div class="features__wrapper">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
@@ -51,7 +53,6 @@
                   <p class="features__number">— №1 —</p>
                   <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <!-- http://via.placeholder.com/320x260 -->
                 <div class="features__image features__image--city">
                   <img src="img/features-photo-city.jpg" alt="Улица Седоны. Зелёное двухэтажное здание с магазинами">
                 </div>
@@ -64,7 +65,7 @@
                   </li>
                   <li class="features__advice-item features__advice-item--souvenirs">
                     <h4 class="features__advice-header">Сувениры</h4>
-                    <p class="features__advice-description">Не только китайского, но и местного производства!</p>
+                    <p class="features__advice-description"><span>Не только китайского,</span> но и местного производства!</p>
                   </li>
                   <li class="features__advice-item features__advice-item--food">
                     <h4 class="features__advice-header">Еда</h4>
@@ -75,8 +76,8 @@
               </ul>
             </li>
             <li class="features__item features__item-block features__item-block--bridge">
-              <div class="features__card features__card--main">
-                <h3 class="features__title">Там есть мост дьявола</h3>
+              <div class="features__card features__card--main features__card--bridge">
+                <h3 class="features__title"><span>Там есть</span> мост дьявола</h3>
                 <p class="features__number">— №2 —</p>
                 <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
@@ -86,21 +87,21 @@
             </li>
             <li class="features__item features__card features__card--sub">
               <div class="features__card-content">
-                <h3 class="features__title">Небольшая<span class="features__title--desktop"><br></span>площадь</h3>
+                <h3 class="features__title">Небольшая площадь</h3>
                 <p class="features__number">— №3 —</p>
                 <p class="features__description">Все интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="features__item features__card features__card--sub">
               <div class="features__card-content">
-                <h3 class="features__title">Красивая<span class="features__title--desktop"><br></span>дорога</h3>
+                <h3 class="features__title">Красивая дорога</h3>
                 <p class="features__number">— №4 —</p>
                 <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="features__item features__card features__card--sub">
               <div class="features__card-content">
-                <h3 class="features__title">Мало<span class="features__title--desktop"><br></span>туристов</h3>
+                <h3 class="features__title">Мало туристов</h3>
                 <p class="features__number">— №5 —</p>
                 <p class="features__description">Большинство едет в гранд каньон и толпится там</p>
               </div>
@@ -112,7 +113,7 @@
         <div class="booking__wrapper">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="booking__title">Заинтересовались?</p>
-          <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+          <p class="booking__description"><span>Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц
             в Cедоне</p>
           <a href="#" class="button booking__link">Найти гостиницу</a>
         </div>
@@ -120,6 +121,7 @@
       <section class="map page-main__map">
         <h2 class="visually-hidden">Седона на карте</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187139.0657495235!2d-111.91245996916899!3d34.72940150941927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1607855401493!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <img src="img/map.jpg" alt="Карта с местонахождением. Аризона 86336, США">
       </section>
     </main>
     <footer class="page-footer">
@@ -149,8 +151,12 @@
           </li>
         </ul>
         <div class="page-footer__copyright">
-          Разработано
-          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+          <span>Разработано</span>
+          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" title="Интенсив HTML Academy" target="_blank">
+            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

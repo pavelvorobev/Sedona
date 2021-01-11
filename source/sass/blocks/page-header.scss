@@ -8,4 +8,18 @@
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $width-desktop) {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: $width-desktop) {
+      display: none;
+    }
+  }
 }

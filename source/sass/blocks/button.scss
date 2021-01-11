@@ -10,4 +10,17 @@
   background-color: $color-blue;
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-blue-hover;
+  }
+
+  &:active {
+    background-color: $color-blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $color-gray-disabled;
+  }
 }

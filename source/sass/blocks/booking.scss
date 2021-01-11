@@ -1,12 +1,13 @@
 .booking {
-  padding: 41px 30px;
+  padding: 37px 20px 49px 20px;
 
   @media (min-width: $width-tablet) {
-    padding: 58px 155px;
+    padding: 45px 155px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 58px 155px 66px 155px;
+    padding: 59px 155px 66px 155px;
   }
 }
 
@@ -16,10 +17,19 @@
 
 .booking__title {
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 22px;
 
   @include fontMeasure(700, 21px, 26px);
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include fontMeasure(700, 30px, 26px);
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 35px;
+  }
 }
 
 .booking__description {
@@ -29,6 +39,22 @@
   @include fontMeasure(400, 14px, 24px);
   color: $color-light-black;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 40px;
+
+    span {
+      padding: 0 80px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 42px;
+
+    span {
+      padding: 0 295px;
+    }
+  }
 }
 
 .booking__link {
@@ -44,5 +70,9 @@
 
   @media (min-width: $width-tablet) {
     width: 458px;
+  }
+
+  &--disabled {
+    background-color: $color-gray-disabled;
   }
 }

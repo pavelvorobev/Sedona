@@ -11,7 +11,7 @@
 
   text-transform: uppercase;
 
-  @media (max-width: 320px) {
+  @media (max-width: $width-mobile-only) {
     &::after {
       content: "";
       position: absolute;
@@ -20,18 +20,24 @@
       height: 37px;
       left: 0;
       top: 64px;
-      overflow: hidden;
-      background-image: url("../img/features-intro-after.png");
+      background-image: url("../img/features-intro-after.svg");
       background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: 525px) {
+    &::after {
+      top: 40px;
     }
   }
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: 35px;
+    margin-top: 33px;
     margin-bottom: 40px;
   }
 }
@@ -122,10 +128,11 @@
     background-color: $color-light-gray;
 
     @media (min-width: $width-tablet) {
-      padding: 42px 34px 42px 34px;
+      padding: 42px 25px 0 25px;
     }
 
     @media (min-width: $width-desktop) {
+      padding-top: 40px;
       padding-bottom: 52px;
     }
 
@@ -145,13 +152,18 @@
     }
 
     .features__number {
+      @media (min-width: $width-tablet) {
+        margin-top: 13px;
+      }
+
       @media (min-width: $width-desktop) {
-        margin-top: 15px;
+        margin-top: 13px;
       }
     }
 
     .features__description {
       @media (min-width: $width-desktop) {
+        margin-top: 24px;
         padding: 0;
       }
     }
@@ -163,16 +175,20 @@
     .features__title {
       margin-top: 0;
 
-      @media (min-width: $width-tablet) {
+      @media (width: $width-tablet) {
         margin-top: 5px;
-        padding: 0 40px;
+
+        span {
+          padding: 0 40px;
+        }
       }
 
       @media (min-width: $width-desktop) {
+        margin-top: 10px;
+
         span {
-          padding: 0 100px;
+          padding: 0 50px;
         }
-        margin-top: 13px;
       }
     }
 
@@ -185,6 +201,47 @@
 
       @media (min-width: $width-desktop) {
         padding: 0 70px;
+      }
+    }
+  }
+
+  &--city {
+    @media (min-width: $width-tablet) {
+      padding-top: 38px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media (min-width: $width-desktop) {
+      .features__description {
+        margin-top: 25px;
+      }
+
+      .features__number {
+        margin-top: 11px;
+      }
+    }
+  }
+
+  &--road {
+    @media (width: $width-tablet) {
+      padding: 42px 40px 36px 40px;
+
+      span {
+        padding: 0 10px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 40px;
+
+      .features__description {
+        margin-top: 21px;
+        padding: 0 22px;
+      }
+
+      span {
+        padding: 0;
       }
     }
   }
@@ -238,7 +295,7 @@
   @media (min-width: $width-tablet) {
     margin-bottom: 0;
     margin-top: 25px;
-    padding: 0 10px;
+    padding: 0;
   }
 }
 
@@ -313,7 +370,7 @@
   @media (min-width: $width-tablet) {
     width: 33%;
     text-align: center;
-    padding: 158px 31px 32px 31px;
+    padding: 156px 31px 32px 31px;
 
     &--housing::before {
       left: 50%;
@@ -329,7 +386,7 @@
 
     &--food::before {
       left: 50%;
-      top: 63px;
+      top: 65px;
       transform: translateX(-50%);
       width: 76px;
       height: 68px;
@@ -341,7 +398,7 @@
 
     &--souvenirs::before {
       left: 50%;
-      top: 63px;
+      top: 60px;
       transform: translateX(-50%);
       width: 64px;
       height: 75px;
@@ -350,6 +407,7 @@
 
   @media (min-width: $width-desktop) {
     margin-bottom: 51px;
+    padding-top: 158px;
   }
 }
 

@@ -7,12 +7,20 @@
   height: 389px;
   text-align: center;
   background-color: $color-light-blue;
-  background-image: url("../img/main-background-mobile.jpg");
+  /* background-image: url("../img/main-background-tablet.jpg"); */
   background-position: center center;
   background-repeat: no-repeat;
 
-  @media (min-width: $width-tablet) {
-    background-image: url("../img/main-background.jpg");
+  @media (max-width: 320px) {
+    background-image: url("../img/main-background-mobile.jpg");
+  }
+
+  @media (min-width: 321px) and (max-width: $width-tablet) {
+    background-image: url("../img/main-background-tablet.jpg");
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../img/main-background-desktop.jpg");
     height: 518px;
   }
 }

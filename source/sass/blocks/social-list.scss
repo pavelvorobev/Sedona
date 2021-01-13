@@ -3,9 +3,13 @@
 
   @include reset-list;
   justify-content: center;
-  margin: -3px 0 30px -8px;
+  margin: 0 0 30px -3px;
 
   @include fontMeasure(400, 14px, 26px);
+
+  @media (min-width: $width-tablet) {
+    margin: -4px 0 30px -6px;
+  }
 }
 
 .social-list__item {

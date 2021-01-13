@@ -1,13 +1,13 @@
 .booking {
-  padding: 37px 20px 49px 20px;
+  padding: 33px 20px 49px 20px;
 
   @media (min-width: $width-tablet) {
-    padding: 45px 155px;
+    padding: 47px 155px;
     padding-bottom: 58px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 59px 155px 66px 155px;
+    padding: 56px 155px 66px 155px;
   }
 }
 
@@ -24,7 +24,7 @@
 
   @media (min-width: $width-tablet) {
     @include fontMeasure(700, 30px, 26px);
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $width-desktop) {
@@ -42,7 +42,9 @@
 
   @media (min-width: $width-tablet) {
     margin-bottom: 40px;
+  }
 
+  @media (width: $width-tablet) {
     span {
       padding: 0 80px;
     }
@@ -50,9 +52,11 @@
 
   @media (min-width: $width-desktop) {
     margin-bottom: 42px;
+  }
 
+  @media (width: $width-desktop) {
     span {
-      padding: 0 295px;
+      padding: 0 290px;
     }
   }
 }

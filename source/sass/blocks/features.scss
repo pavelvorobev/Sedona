@@ -3,14 +3,58 @@
 }
 
 .features__intro {
-  margin-top: 43px;
-  margin-bottom: 30px;
+  position: relative;
+  margin-top: 30px;
+  padding: 0 12px;
 
   @include fontMeasure(400, 14px, 26px);
+
+  text-transform: uppercase;
+
+  @media (max-width: $width-mobile-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      height: 37px;
+      left: 0;
+      top: 64px;
+      background-image: url("../img/features-intro-after.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: 525px) {
+    &::after {
+      top: 40px;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 33px;
+    margin-bottom: 40px;
+  }
 }
 
 .features__list {
   @include reset-list;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.features__item {
+  &--city {
+    grid-column: 1/4;
+  }
 }
 
 .features__item-block {
@@ -18,12 +62,13 @@
   flex-direction: column;
 
   img {
-    width: 100%;
     height: 260px;
+    object-fit: cover;
   }
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
+    grid-column: 1/4;
 
     img {
       height: 256px;
@@ -36,15 +81,193 @@
 }
 
 .features__card {
-  padding: 53px 12px 39px 12px;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    .features__title {
+      @include fontMeasure(700, 21px, 26px);
+    }
+  }
 
   &--main {
+    padding: 39px 12px 24px 12px;
     color: $color-white;
     background-color: $color-blue;
+
+    .features__title {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $width-tablet) {
+      width: 33%;
+      height: 256px;
+
+      .features__title {
+        padding: 0 25px;
+        margin-top: 5px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 33%;
+
+      .features__title {
+        padding: 0 80px;
+        margin-top: 10px;
+      }
+
+      .features__description {
+        margin-top: 28px;
+        padding: 0 50px;
+      }
+    }
   }
 
   &--sub {
+    padding: 28px 20px 0 20px;
     background-color: $color-light-gray;
+
+    @media (min-width: $width-tablet) {
+      padding: 42px 25px 0 25px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 40px;
+      padding-bottom: 52px;
+    }
+
+    .features__card-content {
+      padding: 0 15px 8px 15px;
+    }
+
+    .features__title {
+      @media (min-width: $width-tablet) {
+        width: 123px;
+        margin: 0 auto;
+      }
+
+      @media (min-width: $width-desktop) {
+        margin-top: 2px;
+      }
+    }
+
+    .features__number {
+      @media (min-width: $width-tablet) {
+        margin-top: 13px;
+      }
+
+      @media (min-width: $width-desktop) {
+        margin-top: 13px;
+      }
+    }
+
+    .features__description {
+      @media (min-width: $width-desktop) {
+        margin-top: 24px;
+        padding: 0;
+      }
+    }
+  }
+
+  &--bridge {
+    padding-bottom: 35px;
+
+    .features__title {
+      margin-top: 0;
+
+      @media (width: $width-tablet) {
+        margin-top: 5px;
+
+        span {
+          padding: 0 40px;
+        }
+      }
+
+      @media (min-width: $width-desktop) {
+        margin-top: 10px;
+
+        span {
+          padding: 0 50px;
+        }
+      }
+    }
+
+    .features__description {
+      margin-bottom: 0;
+
+      @media (min-width: $width-tablet) {
+        padding: 0 30px;
+      }
+
+      @media (min-width: $width-desktop) {
+        padding: 0 70px;
+      }
+    }
+  }
+
+  &--city {
+    @media (min-width: $width-tablet) {
+      padding-top: 38px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media (min-width: $width-desktop) {
+      .features__description {
+        margin-top: 25px;
+      }
+
+      .features__number {
+        margin-top: 11px;
+      }
+    }
+  }
+
+  &--road {
+    @media (width: $width-tablet) {
+      padding: 42px 40px 36px 40px;
+
+      span {
+        padding: 0 10px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 40px;
+
+      .features__description {
+        margin-top: 21px;
+        padding: 0 22px;
+      }
+
+      span {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.features__card--sub:not(:last-child) .features__card-content {
+  border-bottom: 1px solid $color-gray;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+  }
+}
+
+.features__image {
+  height: 256px;
+
+  &--city {
+    grid-column: 2/4;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 67%;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
@@ -57,43 +280,153 @@
 }
 
 .features__number {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0;
 
   @include fontMeasure(400, 14px, 21px);
 }
 
 .features__description {
-  margin-top: 28px;
-  margin-bottom: 0;
+  margin-top: 19px;
 
   @include fontMeasure(400, 14px, 21px);
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+    margin-top: 25px;
+    padding: 0;
+  }
 }
 
 .features__advice {
+  @include reset-list;
+}
+
+.features__advice-wrapper {
   display: flex;
   flex-direction: column;
-
-  @include reset-list;
-  padding: 35px 40px 9px 69px;
+  padding: 40px 20px 8px 20px;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
+    padding: 0;
   }
 }
 
 .features__advice-item {
-  text-align: left;
   margin-bottom: 26px;
+  padding-left: 48px;
+  text-align: left;
+
+  &--housing {
+    position: relative;
+  }
+
+  &--housing::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 39px;
+    height: 37px;
+    background-image: url("../img/icon-house.svg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &--souvenirs {
+    position: relative;
+  }
+
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &--food {
+    position: relative;
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -2px;
+    width: 40px;
+    height: 35px;
+    background-image: url("../img/icon-burger.svg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 33%;
+    text-align: center;
+    padding: 156px 31px 32px 31px;
+
+    &--housing::before {
+      left: 50%;
+      top: 63px;
+      transform: translateX(-50%);
+      width: 75px;
+      height: 72px;
+    }
+
+    &--food {
+      order: 2;
+    }
+
+    &--food::before {
+      left: 50%;
+      top: 65px;
+      transform: translateX(-50%);
+      width: 76px;
+      height: 68px;
+    }
+
+    &--souvenirs {
+      order: 3;
+    }
+
+    &--souvenirs::before {
+      left: 50%;
+      top: 60px;
+      transform: translateX(-50%);
+      width: 64px;
+      height: 75px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 51px;
+    padding-top: 158px;
+  }
 }
 
 .features__advice-header {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 
   @include fontMeasure(700, 18px, 26px);
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 4px;
+
+    @include fontMeasure(700, 21px, 26px);
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 0;
+  }
 }
 
 .features__advice-description {
@@ -103,4 +436,32 @@
   @include fontMeasure(400, 14px, 21px);
   color: $color-light-black;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 20px;
+  }
+}
+
+.features__advice-item--food .features__advice-description {
+  padding-right: 15px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 20px;
+  }
+}
+
+.features__advice-item--souvenirs .features__advice-description {
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    span {
+      padding: 0 80px;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 .button {
+  box-sizing: border-box;
   width: 280px;
-  height: 58px;
+  min-height: 58px;
   text-align: center;
 
   @include fontMeasure(700, 21px, 26px);
@@ -9,4 +10,17 @@
   background-color: $color-blue;
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-blue-hover;
+  }
+
+  &:active {
+    background-color: $color-blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $color-gray-disabled;
+  }
 }

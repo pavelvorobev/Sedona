@@ -179,6 +179,7 @@
 .feedback__button {
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 
   @media (min-width: $width-tablet) {
     margin: 0;

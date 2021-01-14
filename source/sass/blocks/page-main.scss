@@ -7,27 +7,54 @@
   height: 389px;
   text-align: center;
   background-color: $color-light-blue;
-  background-image: url("../img/main-background-mobile.jpg");
+  /* background-image: url("../img/main-background-tablet.jpg"); */
   background-position: center center;
   background-repeat: no-repeat;
 
-  @media (min-width: $width-tablet) {
-    background-image: url("../img/main-background.jpg");
+  @media (max-width: 320px) {
+    background-image: url("../img/main-background-mobile.jpg");
+  }
+
+  @media (min-width: 321px) and (max-width: $width-tablet) {
+    background-image: url("../img/main-background-tablet.jpg");
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../img/main-background-desktop.jpg");
     height: 518px;
   }
 }
 
 .page-main__slogan img {
   margin-top: 90px;
+
+  @media (min-width: $width-tablet) {
+    width: 461px;
+    height: 350px;
+    margin-top: 77px;
+  }
 }
 
 .page-main__header {
-  margin-top: 32px;
+  margin-top: 33px;
   margin-bottom: 0;
+  padding: 0 25px;
   text-align: center;
 
   @include fontMeasure(700, 18px, 26px);
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 120px;
+    margin-top: 48px;
+
+    @include fontMeasure(700, 21px, 26px);
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 300px;
+    margin-top: 55px;
+  }
 }
 
 .page-main__feedback {

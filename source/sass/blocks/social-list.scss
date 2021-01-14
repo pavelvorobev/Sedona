@@ -1,4 +1,44 @@
 .social-list {
+  display: flex;
+
   @include reset-list;
+  justify-content: center;
+  margin: 0 0 30px -3px;
+
   @include fontMeasure(400, 14px, 26px);
+
+  @media (min-width: $width-tablet) {
+    margin: -4px 0 30px -6px;
+  }
+}
+
+.social-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-blue;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  a {
+    display: flex;
+    width: 46px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $color-blue-hover;
+    }
+
+    &:active {
+      background-color: $color-blue-active;
+
+      svg path {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 }

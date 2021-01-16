@@ -166,7 +166,7 @@
     @include fontMeasure(700, 14px, 26px);
 
     &:nth-child(4n + 2) {
-      margin-right: 156px;
+      margin-right: 154px;
 
       @media (min-width: $width-desktop) {
         margin-right: 250px;
@@ -183,7 +183,7 @@
   color: $color-white;
 
   @media (min-width: $width-tablet) {
-    min-width: 153px;
+    min-width: 145px;
     padding: 16px 0 14px 0;
     color: $color-black;
 

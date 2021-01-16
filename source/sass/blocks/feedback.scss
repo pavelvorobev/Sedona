@@ -62,7 +62,7 @@
 
   @media (min-width: $width-desktop) {
     padding: 0 260px;
-    margin-bottom: 56px;
+    margin-bottom: 59px;
   }
 }
 
@@ -103,6 +103,7 @@
 .feedback__input {
   box-sizing: border-box;
   width: 100%;
+  height: 58px;
   padding: 18px 22px 14px 22px;
 
   @include fontMeasure(700, 16px, 26px);
@@ -120,7 +121,8 @@
 
   &:focus {
     background-color: $color-white;
-    outline: 4px solid $color-gray-disabled;
+    outline: none;
+    border: 4px solid $color-gray-disabled;
   }
 }
 
@@ -137,6 +139,7 @@
 
 .feedback__button {
   display: block;
+  padding-top: 7px;
   margin: 0 auto;
   cursor: pointer;
 
@@ -515,7 +518,7 @@
 
   .feedback__radio-button:focus + .feedback__label {
     &::before {
-      outline: 2px solid $color-gray;
+      border: 4px solid $color-gray;
     }
   }
 }
@@ -604,7 +607,7 @@
 
   .feedback__checkbox:focus + .feedback__label {
     &::before {
-      outline: 2px solid $color-gray;
+      border: 4px solid $color-gray;
     }
   }
 
@@ -695,7 +698,8 @@
 
     &:focus {
       background-color: $color-white;
-      outline: 4px solid $color-gray-disabled;
+      outline: none;
+      border: 4px solid $color-gray-disabled;
     }
   }
 

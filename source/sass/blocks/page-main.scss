@@ -7,36 +7,37 @@
   height: 389px;
   text-align: center;
   background-color: $color-light-blue;
-  /* background-image: url("../img/main-background-tablet.jpg"); */
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
 
-  @media (max-width: $width-mobile) {
+  @media (max-width: $width-mobile-only) {
     background-image: url("../img/main-background-mobile.jpg");
-  }
-
-  @media (min-width: 321px) and (max-width: 767px) {
-    background-image: url("../img/main-background-tablet.jpg");
+    background-size: cover;
   }
 
   @media (min-width: $width-tablet) {
+    background-image: url("../img/main-background-tablet.jpg");
+    height: 518px;
+    background-size: cover;
+  }
+
+  @media (min-width: $width-desktop) {
     background-image: url("../img/main-background-desktop.jpg");
     height: 518px;
   }
 
   &--short {
+    background-position: center bottom;
+
     @media (max-width: $width-mobile-only) {
-      background-position: center -231px;
       height: 158px;
     }
 
     @media (min-width: $width-tablet) {
-      background-position: center -228px;
       height: 290px;
     }
 
     @media (min-width: $width-desktop) {
-      background-position: center -217px;
       height: 299px;
     }
   }

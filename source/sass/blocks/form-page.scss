@@ -1,0 +1,13 @@
+.form-page {
+  .page-footer {
+    padding-top: 52px;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 77px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 81px;
+    }
+  }
+}

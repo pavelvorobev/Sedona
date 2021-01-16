@@ -11,17 +11,34 @@
   background-position: center center;
   background-repeat: no-repeat;
 
-  @media (max-width: 320px) {
+  @media (max-width: $width-mobile) {
     background-image: url("../img/main-background-mobile.jpg");
   }
 
-  @media (min-width: 321px) and (max-width: $width-tablet) {
+  @media (min-width: 321px) and (max-width: 767px) {
     background-image: url("../img/main-background-tablet.jpg");
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $width-tablet) {
     background-image: url("../img/main-background-desktop.jpg");
     height: 518px;
+  }
+
+  &--short {
+    @media (max-width: $width-mobile-only) {
+      background-position: center -231px;
+      height: 158px;
+    }
+
+    @media (min-width: $width-tablet) {
+      background-position: center -228px;
+      height: 290px;
+    }
+
+    @media (min-width: $width-desktop) {
+      background-position: center -217px;
+      height: 299px;
+    }
   }
 }
 
@@ -32,6 +49,23 @@
     width: 461px;
     height: 350px;
     margin-top: 77px;
+  }
+}
+
+.page-main__slogan--short img {
+  margin-top: 50px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 95px;
+    width: 457px;
+    height: 78px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 100px;
+    margin-right: 4px;
+    width: 460px;
+    height: 80px;
   }
 }
 
@@ -59,6 +93,7 @@
 
 .page-main__feedback {
   margin-top: 36px;
+  padding-bottom: 25px;
 }
 
 .page-main__photo {

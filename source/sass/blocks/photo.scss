@@ -44,7 +44,6 @@
 
 .photo__list {
   display: grid;
-  /* justify-items: center; */
 
   @include reset-list;
   margin-top: 34px;
@@ -114,7 +113,6 @@
   @media (min-width: $width-tablet) {
     height: 80px;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 0 20px 0 20px;
     background-color: $color-input-background;
@@ -131,7 +129,6 @@
 
 .photo__info {
   @media (min-width: $width-tablet) {
-    /* width: 218px; */
     width: 77%;
   }
 

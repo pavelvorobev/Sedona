@@ -13,19 +13,16 @@
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    background-image: url("../img/main-background-tablet.jpg");
-    height: 518px;
-  }
-
-  @media (min-width: $width-desktop) {
     background-image: url("../img/main-background-desktop.jpg");
+    height: 518px;
   }
 
   &--short {
     background-position: center bottom;
     height: 158px;
-
+    
     @media (min-width: $width-tablet) {
+      background-size: auto;
       height: 290px;
     }
 

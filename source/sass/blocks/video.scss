@@ -82,7 +82,6 @@
   padding: 0 18px;
   box-sizing: border-box;
   align-items: center;
-  
 
   @media (min-width: $width-tablet) {
     position: absolute;
@@ -100,7 +99,6 @@
 }
 
 .video__control-button {
-
   &:hover {
     cursor: pointer;
 
@@ -273,5 +271,3 @@
     width: 540px;
   }
 }
-
-

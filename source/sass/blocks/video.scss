@@ -1,10 +1,5 @@
 .video {
-  padding: 0 15px;
-}
-
-.video__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
+  position: relative;
   text-align: center;
 }
 
@@ -13,11 +8,15 @@
 
   @include fontMeasure(700, 18px, 26px);
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include fontMeasure(700, 30px, 26px);
+  }
 }
 
 .video__intro {
-  margin: 10px auto 0 auto;
-  margin-top: 27px;
+  margin: 27px auto 33px auto;
+  padding: 0 40px;
 
   @include fontMeasure(400, 14px, 24px);
   text-align: center;
@@ -25,6 +24,195 @@
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
+    margin-top: 30px;
+    margin-bottom: 82px;
     max-width: 448px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 32px;
+  }
+}
+
+.video__image {
+  width: 100vw;
+
+  @media (min-width: $width-tablet) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.video__control {
+  position: absolute;
+  box-sizing: border-box;
+  width: 280px;
+  height: 45px;
+  padding: 10px 23px 0 22px;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $width-tablet) {
+    width: 648px;
+    height: 93px;
+    bottom: 7px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.video__control-button {
+  background: #f2f2f2;
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+  margin-top: -7px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  box-sizing: border-box;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    padding: 0 35px;
+    transform: translateX(-50%);
+    background: none;
+    width: 648px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.video__replay {
+  background-image: url("../img/replay-mobile.svg");
+  background-color: none;
+  width: 16px;
+  height: 20px;
+  border: none;
+  outline: none;
+  margin-right: 90px;
+
+  @media (min-width: $width-tablet) {
+    /* margin-right: 480px; */
+    margin-bottom: 22px;
+    background-image: url("../img/replay.svg");
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  @media (min-width: $width-desktop) {
+    /* margin-right: 600px; */
+  }
+}
+
+.video__subtitles {
+  margin-top: 3px;
+  margin-left: 12px;
+  background-image: url("../img/subtitles-mobile.svg");
+  background-color: none;
+  width: 32px;
+  height: 20px;
+  border: none;
+  outline: none;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    margin-bottom: 22px;
+    margin-left: 350px;
+    background-image: url("../img/subtitles.svg");
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 500px;
+  }
+}
+
+.video__fullscreen {
+  background-image: url("../img/fullscreen-mobile.svg");
+  background-color: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 22px;
+    margin-right: 5px;
+    background-image: url("../img/fullscreen.svg");
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.video__range-volume {
+  width: 100%;
+  /* height: 45px; */
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    width: 389px;
+    top: 30px;
+    left: 90px;
+    /* padding: 10px 0 0 3px; */
+    transform: translateX(0%);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 540px;
+  }
+}
+
+.video__range {
+  /*-webkit-appearance: none;*/
+  width: 100%;
+}
+
+.video__range::-webkit-slider-thumb {
+  /*-webkit-appearance: none;*/
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -5px;
+  position: relative;
+}
+
+.video__range:focus {
+  outline: none;
+}
+
+.video__range::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.video__range::-webkit-slider-runnable-track {
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+
+  @media (min-width: $width-tablet) {
+    width: 389px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 540px;
   }
 }

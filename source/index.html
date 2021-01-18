@@ -30,9 +30,11 @@
             </li>
           </ul>
           <a class="page-header__logo">
-            <img class="page-header__logo--mobile" src="img/logo.svg" width="102" height="84" alt="Городок Седона">
-            <img class="page-header__logo--desktop" src="img/logo-desktop.svg" width="187" height="97" alt="Городок Седона">
-            <img class="page-header__logo--tablet" src="img/logo-tablet.svg" width="102" height="84" alt="Городок Седона">
+            <picture>
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)" width="187" height="97">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" width="187" height="97">
+              <img class="page-header__logo-img" src="img/logo.svg" width="102" height="84" alt="Городок Седона">
+            </picture>
           </a>
         </div>
       </nav>
@@ -55,7 +57,13 @@
                   <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="features__image features__image--city">
-                  <img src="img/features-photo-city.jpg" alt="Улица Седоны. Зелёное двухэтажное здание с магазинами">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/features-photo-city-desktop.jpg 1x, img/features-photo-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/features-photo-city-tablet.jpg 1x, img/features-photo-city-tablet@2x.jpg 2x">
+                    <img src="img/features-photo-city-mobile.jpg" srcset="img/features-photo-city-mobile@2x.jpg 2x" alt="Улица Седоны. Зелёное двухэтажное здание с магазинами">
+                  </picture>
                 </div>
               </div>
               <ul class="features__advice">
@@ -83,7 +91,13 @@
                 <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="features__image features__image--bridge">
-                <img src="img/features-photo-bridge.jpg" alt="Скалистое ущелье">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/features-photo-bridge-desktop.jpg 1x, img/features-photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/features-photo-bridge-tablet.jpg 1x, img/features-photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/features-photo-bridge-mobile.jpg" srcset="img/features-photo-bridge-mobile@2x.jpg 2x" alt="Скалистое ущелье">
+                </picture>
               </div>
             </li>
             <li class="features__item features__card features__card--sub">

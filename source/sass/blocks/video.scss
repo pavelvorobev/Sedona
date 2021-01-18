@@ -210,14 +210,13 @@
 }
 
 .video__range {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   height: 3px;
 }
 
 .video__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   width: 13px;
   height: 13px;
   background-color: $color-white;
@@ -228,7 +227,7 @@
 }
 
 .video__range::-moz-range-thumb {
-  -moz-appearance: none;
+  appearance: none;
   width: 13px;
   height: 13px;
   background-color: $color-white;

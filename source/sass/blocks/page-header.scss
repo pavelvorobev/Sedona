@@ -8,30 +8,11 @@
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
+}
 
-  &--desktop {
-    display: none;
-
-    @media (min-width: $width-desktop) {
-      display: block;
-    }
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $width-tablet) {
-      display: block;
-    }
-
-    @media (min-width: $width-desktop) {
-      display: none;
-    }
-  }
-
-  &--mobile {
-    @media (min-width: $width-tablet) {
-      display: none;
-    }
+.page-header__logo-img {
+  @media (min-width: $width-tablet) {
+    width: 187px;
+    height: 97px;
   }
 }

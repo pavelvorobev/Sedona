@@ -76,6 +76,8 @@
 .feedback__legend {
   @include fontMeasure(700, 18px, 26px);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
@@ -388,24 +390,39 @@
 
   .feedback__legend {
     margin-bottom: 17px;
+
+    @media (min-width: $width-tablet) {
+      position: relative;
+      margin-bottom: 72px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: calc(-25vw + 51%);
+        width: 1px;
+        height: 292px;
+        background-color: $color-gray-lines-tablet;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 72px;
+      margin-left: 54px;
+
+      &::after {
+        right: -154px;
+      }
+    }
   }
 
   @media (min-width: $width-tablet) {
     justify-self: start;
     order: -1;
-
-    .feedback__legend {
-      margin-bottom: 72px;
-    }
   }
 
   @media (min-width: $width-desktop) {
     justify-self: start;
-
-    .feedback__legend {
-      margin-bottom: 72px;
-      margin-left: 54px;
-    }
 
     .form__items {
       margin-right: 41px;
@@ -427,26 +444,6 @@
       width: 100vw;
       height: 1px;
       background-color: $color-gray-disabled;
-    }
-  }
-
-  @media (min-width: $width-tablet) {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: calc(-25vw + 51%);
-      width: 1px;
-      height: 292px;
-      background-color: $color-gray-lines-tablet;
-    }
-  }
-
-  @media (min-width: $width-desktop) {
-    &::after {
-      right: -154px;
     }
   }
 

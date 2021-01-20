@@ -18,6 +18,7 @@ menuToggle.addEventListener('click', function() {
 
 buttonError.addEventListener('click', function() {
   popupError.style.display = "none";
+  feedbackForm.reportValidity();
 });
 
 buttonSuccess.addEventListener('click', function() {

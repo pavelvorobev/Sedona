@@ -10,7 +10,7 @@
   <body class="page__body body catalog-page">
     <div class="body__wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <br>
           <button class="main-nav__toggle" type="button" title="Открыть меню"></button>
           <div class="main-nav__wrapper">
@@ -29,9 +29,6 @@
               </li>
             </ul>
             <a class="page-header__logo" href="index.html">
-              <!-- <img class="page-header__logo--mobile" src="img/logo.svg" width="102" height="84" alt="Городок Седона">
-              <img class="page-header__logo--desktop" src="img/logo-desktop.svg" width="187" height="97" alt="Городок Седона">
-              <img class="page-header__logo--tablet" src="img/logo-tablet.svg" width="102" height="84" alt="Городок Седона"> -->
               <picture>
                 <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)" width="187" height="97">
                 <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" width="187" height="97">
@@ -56,6 +53,11 @@
             <ul class="photo__list">
               <li class="photo__item photo__item--wide">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -72,6 +74,11 @@
               </li>
               <li class="photo__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -88,6 +95,11 @@
               </li>
               <li class="photo__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -104,6 +116,11 @@
               </li>
               <li class="photo__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -130,6 +147,10 @@
             </p>
             <div class="video__player">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -201,5 +222,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

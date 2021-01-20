@@ -42,7 +42,7 @@
 }
 
 .popup-success {
-  display: block;
+  display: none;
   width: 320px;
 
   .popup__title {
@@ -133,9 +133,6 @@
   padding: 20px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 44px;
-    padding-right: 91px;
-    padding-bottom: 44px;
-    padding-left: 91px;
+    padding: 44px 91px;
   }
 }

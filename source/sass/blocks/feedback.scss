@@ -95,8 +95,8 @@
     text-transform: uppercase;
   }
 
-  &--desktop {
-    @media (min-width: $width-desktop) {
+  @media (min-width: $width-desktop) {
+    span {
       display: none;
     }
   }

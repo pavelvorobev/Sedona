@@ -17,23 +17,23 @@ menuToggle.addEventListener('click', function() {
 });
 
 buttonError.addEventListener('click', function() {
-  popupError.style.display = "none";
+  popupError.style.display = 'none';
   feedbackForm.reportValidity();
 });
 
 buttonSuccess.addEventListener('click', function() {
-  popupSuccess.style.display = "none";
+  popupSuccess.style.display = 'none';
 });
 
 feedbackButton.addEventListener('click', function(e) {
   if(!feedbackForm.checkValidity()) {
     e.preventDefault();
-    popupError.style.display = "block";
+    popupError.style.display = 'block';
   }
 });
 
 feedbackForm.addEventListener('submit', function(e) {
   e.preventDefault();
   feedbackForm.reset();
-  popupSuccess.style.display = "block";
+  popupSuccess.style.display = 'block';
 });

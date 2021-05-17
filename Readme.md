@@ -1,4 +1,4 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Седона» HTML Academy
 
 * Студент: [Павел Воробьев](https://up.htmlacademy.ru/adaptive/21/user/520531).
 * Наставник: [Никита Победоносцев](https://htmlacademy.ru/profile/nikkypizza).
